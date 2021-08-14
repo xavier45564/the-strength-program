@@ -1,1 +1,1 @@
-web: gunicorn thestrengthprogram.wsgi --log-file -
+web: gunicorn thestrengthprogram.wsgi
