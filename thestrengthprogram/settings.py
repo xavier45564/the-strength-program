@@ -3,15 +3,16 @@ import django_heroku
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-+kp@v!jqvd#q8z4gdcnqq=o*h0%#mo@_$ywvpu_!e3fv!m835w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['the-strength-program.herokuapp.com', '127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -101,7 +102,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
 ]
 
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,"media")
