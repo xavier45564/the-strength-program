@@ -1,0 +1,157 @@
+/* 17. contact */
+.map-wrapper {
+    & iframe{
+        height: 600px;
+        border: 0;
+        width: 100%;
+    }
+}
+.conatct-address-wrapper {
+  padding: 60px;
+  height: 500;
+  @media #{$laptop}{
+		padding: 60px 20px;
+		height: 500;
+	}
+  @media #{$lg}{
+		padding: 60px 20px;
+		height: 500;
+
+	}
+  @media #{$md}{
+		padding: 60px 20px;
+		height: 500;
+
+	}
+  @media #{$xs}{
+		padding: 60px 20px;
+		height: 500;
+
+	}
+}
+.contact-address-icon {
+	margin-right: 20px;
+	@media #{$lg}{
+		margin-right: 15px;
+	}
+	& i {
+		background: $red;
+		color: $white;
+		height: 80px;
+		width: 80px;
+		text-align: center;
+		line-height: 78px;
+		font-size: 24px;
+		@media #{$lg}{
+			height: 60px;
+			width: 60px;
+			line-height: 60px;
+			font-size: 20px;
+		}
+	}
+}
+.contact-address-text {
+	& h3 {
+		font-size: 30px;
+		@media #{$laptop}{
+			font-size: 20px;
+		}
+		@media #{$lg}{
+			font-size: 20px;
+		}
+		@media #{$md}{
+			font-size: 20px;
+		}
+		@media #{$xs}{
+			font-size: 20px;
+		}
+	}
+	& span {
+		color: #251e5e;
+		font-weight: 700;
+		font-size: 14px;
+		display: block;
+		margin-bottom: 8px;
+	}
+}
+.contact-content {
+	& p {
+		margin: 0;
+	}
+}
+.theme-bg {
+	& .contact-address-icon {
+		& i{
+			background: #151042;
+			color: $white;
+		}
+	}
+	& .contact-address-text {
+		& h3{
+			color: $white;
+		}
+		& span{
+			color: $white;
+		}
+		& p{
+			color: $white;
+		}
+	}
+}
+.red-bg{
+	& .contact-address-text{
+		& h3{
+			color: $white;
+		}
+		& span{
+			color: $white;
+		}
+		& p{
+			color: $white;
+		}
+	}
+	& .contact-address-icon {
+		& i{
+			background: #843e32;
+			color: $white;
+		}
+	}
+}
+.contacts-us-wrapper {
+	padding: 40px;
+	@media #{$xs}{
+		padding: 40px 15px;
+	}
+}
+.contacts-us-form {
+	& input {
+		border: 3px solid transparent;
+		background: $white;
+		height: 80px;
+		margin-bottom: 30px;
+		padding: 0 28px;
+		width: 100%;
+		font-size: 18px;
+		color: #93b2ca;
+		font-weight: 400;
+	}
+	& textarea {
+		border: 3px solid transparent;
+		background: $white;
+		height: 200px;
+		margin-bottom: 30px;
+		padding: 28px;
+		width: 100%;
+		font-size: 18px;
+		color: #93b2ca;
+		font-weight: 400;
+	}
+}
+.contacts-us-form-button {
+	& button {
+		border: 0;
+	}
+}
+.ajax-response {
+	margin: 0;
+}

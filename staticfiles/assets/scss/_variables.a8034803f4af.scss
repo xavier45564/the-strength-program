@@ -1,0 +1,33 @@
+// Font Family
+$open_sans: 'Open Sans', sans-serif;
+
+// Colors ---------------
+$white: #ffffff;
+$black: #282828;
+$black-soft: #333333;
+$red: #a15547;
+$blue: #1e2c8a;
+$blue-soft: #11202d;
+$grey:#dcbfb9;
+$grey-2:#fff7f5;
+$grey-soft:#eef2f6;
+$green:#03b664;
+$theme-color: #251e5e;
+$grey-theme: #f1f1f1;
+$body-text-color: #251e5e;
+$hr-border-color:#eceff8;
+$theme-grey:#f0f4f7;
+$theme-red-soft:#fffaf9;
+// Heading Color
+$heading-color: #404040;
+
+
+
+// Responsive Variables
+$xxl: 'only screen and (min-width: 1600px) and (max-width: 1800px)';
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+

@@ -1,0 +1,57 @@
+/* 14. product */
+.product-img{
+    & a{
+        & img{
+        @media #{$lg}{
+            width: 100%;
+          }
+        @media #{$md}{
+            width: 100%;
+          }
+        @media #{$xs}{
+            width: 100%;
+          }
+        }
+    }
+}
+.p-tag{
+	position: absolute;
+	top: -14px;
+	background: $white;
+	font-size: 14px;
+	font-weight: 700;
+	color: $red;
+	text-transform: uppercase;
+	padding: 4px 14px;
+	right: 0;
+}
+.pro-price{
+    & span{
+        font-size: 20px;
+        font-weight: 700;
+        color:$red;
+    }
+}
+.product-text{
+    margin-top: 23px;
+    & h4{
+        font-size: 16px;
+        letter-spacing: -0.3px;
+        margin-bottom: 20px;
+        margin-top: 8px;
+
+    }
+    & h5{
+        font-size: 12px;
+        margin-bottom: 0;
+        & a{
+         transition: .3s;
+         &:hover{
+             color: $red;
+         }
+         & i{
+            padding-right: 5px;
+        }
+        }
+    }
+}

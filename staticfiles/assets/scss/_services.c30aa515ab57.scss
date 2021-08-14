@@ -1,0 +1,324 @@
+/* 15. services */
+.services-01{
+	margin-bottom: -120px;
+}
+.services-wrapper{
+    padding:60px 44px 53px;
+    @media #{$lg}{
+        padding:60px 20px 53px;
+    }
+    @media #{$md}{
+        padding:60px 20px 53px;
+    }
+    @media #{$xs}{
+        padding:60px 15px 53px;
+    }
+}
+.services-icon{
+    & i{
+        line-height: 140px;
+        height: 140px;
+        width: 140px;
+        text-align: center;
+        background: $white;
+        color: $red;
+        font-size: 70px;
+        display: inline-block;
+        border-radius: 50%;
+    }
+}
+.services-text{
+    & h3{
+        font-size: 24px;
+        color: $white;
+        margin-top: 36px;
+        margin-bottom: 14px;
+    }
+    & p{
+        color: $white;
+    }
+    & a{
+        color: $white;
+        font-size: 16px;
+        font-weight: 700;
+        display: inline-block;
+        opacity: .3;
+    }
+}
+.ser-02{
+   & .services-text{
+    & h3{
+        font-size: 24px;
+        color: $theme-color;
+        margin-top: 36px;
+        margin-bottom: 14px;
+    }
+    & p{
+        color: $theme-color;
+    }
+    & a{
+        color: $red;
+        opacity: 1;
+    }
+}
+}
+// style-2
+.our-services-wrapper{
+    padding: 30px;
+    box-shadow: 0px 6px 12px 0px rgba(20, 33, 43, 0.04);
+    @media #{$lg}{
+       padding:30px 15px
+    }
+    @media #{$md}{
+       padding:30px 15px
+    }
+    @media #{$xs}{
+       padding:30px 15px
+    }
+    & .number-text h3{
+        @media #{$lg}{
+        font-size: 18px;
+        }
+        @media #{$md}{
+        font-size: 20px;
+        }
+        @media #{$xs}{
+        font-size: 20px;
+        }
+    }
+}
+.our-services-wrapper{
+    & .number-wrapper{
+        padding: 0;
+        box-shadow: none;
+        padding-top: 25px;
+    }
+   & .nm-01::before {
+        top: 3px;
+        right: -23px;
+        @media #{$md}{
+            right: 0;
+        }
+        @media #{$xs}{
+            right: 0;
+        }
+    }
+}
+
+// services tab
+.sycho-services-menu ul {
+  display: inline-block;
+}
+.sycho-services-menu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0 10px;
+  @media #{$md}{
+     margin: 0 5px;
+  }
+  @media #{$xs}{
+     margin: 0 5px;
+     margin-bottom: 15px;
+  }
+}
+.sycho-services-menu ul li a {
+  padding: 40px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #251e5e;
+  border: 1px solid #ddd;
+  position: relative;
+  @media #{$md}{
+     padding:40px 20px;
+  }
+  @media #{$xs}{
+     padding:20px 20px;
+  }
+}
+.sycho-services-menu ul li a i {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 70px;
+  color: $red;
+  line-height: 1;
+  font-weight: 300;
+  @media #{$md}{
+        font-size: 50px;
+    }
+  @media #{$xs}{
+        font-size: 30px;
+    }
+}
+.sycho-services-menu ul li a.active {
+  background: $red;
+  border: 0;
+  color: #fff;
+}
+.sycho-services-menu ul li a.active i {
+  color: #fff;
+}
+.sycho-services-menu ul li a:before{
+	content: "";
+	background: $red;
+	width: 100%;
+	height: 0px;
+	bottom: 0px;
+	left: 0;
+    position: absolute;
+    transition: .3s;
+}
+.sycho-services-menu ul li a.active:before{
+    height: 20px;
+    bottom: -20px;
+    @media #{$xs}{
+        height: none;
+        bottom: 0;
+    }
+}
+.sv-box {
+	padding: 50px;
+	background: $red;
+    padding-bottom: 20px;
+    position: relative;
+    top: -1px;
+    @media #{$xs}{
+       padding: 50px 15px;
+    }
+}
+.back-icon {
+	position: absolute;
+	bottom: -64px;
+	right: -12px;
+	z-index: -1;
+}
+.back-icon i {
+	font-size: 210px;
+	line-height: 1;
+	color: #a55c4e;
+}
+.sv-box .sycho-tab-content {
+    padding-left: 0;
+    z-index: 1;
+}
+.sv-box .section-title h2 {
+	font-size: 48px;
+	line-height: 1.2;
+    color: #fff;
+    @media #{$xs}{
+        font-size: 32px;
+    }
+}
+.sv-box .section-title span {
+	color: #fff;
+}
+.sv-box .sycho-tab-content .tab-quote {
+	color: #fff;
+	border-left: 2px solid #7b372a;
+}
+.sv-btn a{
+    background: #7b372a;
+}
+
+
+// tab
+.sycho-tab-menu{
+    & ul {
+        margin-top: -50px;
+        display: block;
+        & li{
+            padding: 0;
+            margin-right: 10px;
+            display: inline-block;
+            @media #{$xs}{
+                margin-bottom: 12px;
+                margin-right: 0;
+            }
+            & a{
+                padding: 13px 38px;
+                background: #251e5e;
+                color: #fff;
+                font-weight: 700;
+                font-size: 16px;
+                @media #{$md}{
+                    padding: 13px 26px;
+                }
+                @media #{$xs}{
+                    padding: 13px 26px;
+                }
+                &.active{
+                    background: $white;
+                    color: #251e5e;
+                }
+            }
+            // &:nth-child(2) a{
+            //     background: #251e5e;
+            //     color: #fff;
+            // }
+            // &:nth-child(3) a{
+            //     background: $red;
+            //     color: #fff;
+            // }
+        }
+    }
+}
+.sycho-tab-menu .tab-content{
+     @media #{$xs}{
+        margin-top: 50px;
+    }
+}
+.sycho-tab-content {
+	padding-right: 80px;
+    padding-left: 25px;
+    @media #{$laptop}{
+       padding-right: 0;
+       padding-left: 0;
+       margin-top: 0;
+    }
+    @media #{$lg}{
+       padding-right: 0;
+       padding-left: 0;
+       margin-top: 0;
+       padding-top: 0;
+    }
+    @media #{$md}{
+       padding-right: 0;
+       padding-left: 0;
+       margin-top: 0;
+       padding-top: 0;
+    }
+    @media #{$xs}{
+       padding-right: 0;
+       padding-left: 0;
+       margin-top: 0;
+       padding-top: 0;
+    }
+}
+.sycho-tab-content {
+    & .tab-quote {
+        font-weight: 600;
+        color: #251e5e;
+        padding-left: 15px;
+        border-left: 2px solid $red;
+        margin: 30px 0;
+        font-size: 18px;
+    }
+    & p{
+        font-size: 14px;
+    }
+}
+.border-top{
+    border-top: 2px solid #e6eaee;
+}
+.about-box {
+    padding: 90px 80px;
+    @media #{$lg}{
+        padding: 90px 30px;
+    }
+    @media #{$md}{
+        padding: 90px 50px;
+    }
+    @media #{$xs}{
+        padding: 90px 15px;
+    }
+}
+

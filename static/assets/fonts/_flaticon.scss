@@ -1,0 +1,86 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 30/08/2020 07:53
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-girl:before { content: "\f100"; }
+.flaticon-brain:before { content: "\f101"; }
+.flaticon-brain-1:before { content: "\f102"; }
+.flaticon-brain-2:before { content: "\f103"; }
+.flaticon-knowledge:before { content: "\f104"; }
+.flaticon-certificate:before { content: "\f105"; }
+.flaticon-brain-3:before { content: "\f106"; }
+.flaticon-life:before { content: "\f107"; }
+.flaticon-depression:before { content: "\f108"; }
+.flaticon-millionaire:before { content: "\f109"; }
+.flaticon-brain-4:before { content: "\f10a"; }
+.flaticon-technical-support:before { content: "\f10b"; }
+.flaticon-email:before { content: "\f10c"; }
+.flaticon-wellness:before { content: "\f10d"; }
+.flaticon-psychology:before { content: "\f10e"; }
+.flaticon-anxiety:before { content: "\f10f"; }
+.flaticon-psychologist:before { content: "\f110"; }
+.flaticon-psychology-1:before { content: "\f111"; }
+.flaticon-psychology-2:before { content: "\f112"; }
+.flaticon-relationship:before { content: "\f113"; }
+.flaticon-brain-5:before { content: "\f114"; }
+.flaticon-brain-6:before { content: "\f115"; }
+.flaticon-mind:before { content: "\f116"; }
+    
+    $font-Flaticon-girl: "\f100";
+    $font-Flaticon-brain: "\f101";
+    $font-Flaticon-brain-1: "\f102";
+    $font-Flaticon-brain-2: "\f103";
+    $font-Flaticon-knowledge: "\f104";
+    $font-Flaticon-certificate: "\f105";
+    $font-Flaticon-brain-3: "\f106";
+    $font-Flaticon-life: "\f107";
+    $font-Flaticon-depression: "\f108";
+    $font-Flaticon-millionaire: "\f109";
+    $font-Flaticon-brain-4: "\f10a";
+    $font-Flaticon-technical-support: "\f10b";
+    $font-Flaticon-email: "\f10c";
+    $font-Flaticon-wellness: "\f10d";
+    $font-Flaticon-psychology: "\f10e";
+    $font-Flaticon-anxiety: "\f10f";
+    $font-Flaticon-psychologist: "\f110";
+    $font-Flaticon-psychology-1: "\f111";
+    $font-Flaticon-psychology-2: "\f112";
+    $font-Flaticon-relationship: "\f113";
+    $font-Flaticon-brain-5: "\f114";
+    $font-Flaticon-brain-6: "\f115";
+    $font-Flaticon-mind: "\f116";

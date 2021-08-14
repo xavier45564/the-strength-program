@@ -1,0 +1,154 @@
+/* 22. team */
+.team-img{
+	& img{
+		width: 100%;
+	}
+}
+.team-content {
+	border: 1px solid #f6f6f6;
+	padding: 35px;
+	padding-bottom: 25px;
+	padding-top: 30px;
+	@media #{$lg}{
+      padding: 35px 15px;
+    }
+	@media #{$xs}{
+      padding: 35px 15px;
+    }
+	& span {
+		color: $red;
+		font-weight: 700;
+		font-size: 14px;
+		display: block;
+		margin-bottom: 10px;
+	}
+	& h3 {
+		margin-bottom: 30px;
+		font-size: 24px;
+		@media #{$lg}{
+			font-size: 20px;
+		}
+		@media #{$md}{
+			font-size: 20px;
+		}
+		@media #{$xs}{
+			font-size: 20px;
+		}
+		& a:hover{
+			color: $red;
+		}
+	}
+}
+.team-social {
+	& li {
+		margin-bottom: 10px;
+		& a {
+			& i {
+				height: 40px;
+				width: 40px;
+				text-align: center;
+				line-height: 40px;
+				font-size: 14px;
+				margin-right: 10px;
+				background: #f6f6f6;
+				transition: .3s;
+			}
+			& span {
+				font-size: 14px;
+				font-weight: 600;
+				color: #251e5e;
+				display: inline-block;
+				margin: 0;
+			}
+			&:hover {
+				& i{
+					background: #251e5e;
+    				color: #fff;
+				}
+			}
+		}
+	}
+}
+.team-details{
+	@media #{$lg}{
+       padding-left: 0;
+    }
+	@media #{$md}{
+       padding-left: 0;
+    }
+	@media #{$xs}{
+       padding-left: 0;
+    }
+}
+.s-quote {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	& span {
+		font-size: 80px;
+		font-weight: 700;
+		background: $red;
+		display: inline-block;
+		line-height: 100px;
+		padding: 0px 29px;
+		color: #fff;
+		margin-right: 20px;
+		height: 103px;
+		margin-top: 6px;
+	}
+}
+.team-details {
+	& p{
+		margin-bottom: 25px;
+	}
+}
+.exp-list {
+	& ul {
+		& li {
+			padding: 15px 0;
+			border-bottom: 1px solid #f6f6f6;
+			& b {
+				width: 230px;
+				display: inline-block;
+			}
+			& i {
+				width: 25px;
+				color: $red;
+			}
+		}
+	}
+}
+.exp-list ul li span{
+	@media #{$xs}{
+       display: block;
+    }
+}
+.team-form {
+	padding: 30px;
+	& .section-title h2 {
+		font-size: 35px;
+		line-height: 1.3;
+		@media #{$lg}{
+			font-size: 28px;
+		}
+		@media #{$xs}{
+			font-size: 28px;
+		}
+	}
+	& .contacts-us-form input {
+		border: 0;
+		background: #fff;
+		height: 60px;
+		margin-bottom: 15px;
+	}
+	& .contacts-us-form textarea {
+		border: 0;
+		height: 150px;
+		margin-bottom: 15px;
+		padding: 20px 28px;
+	}
+	& .c-btn:hover{
+		background: #fff;
+		color: $theme-color;
+	}
+}

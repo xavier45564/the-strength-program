@@ -1,0 +1,189 @@
+/* 7. appointment */
+.appointment-wrapper{
+    margin-top: 40px;
+    @media #{$lg}{
+     margin-top: 0;
+    }
+    @media #{$md}{
+     margin-top: 0;
+    }
+    @media #{$xs}{
+     margin-top: 0;
+    }
+}
+.app-item{
+    background: $grey-soft;
+    padding: 30px 93px 30px 30px;
+     @media #{$xs}{
+       padding: 30px 15px 30px 15px;
+    }
+    & ul{
+        & li{
+            background: $white;
+            padding: 16px 40px;
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.app-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & h4{
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+    & span{
+        color: $theme-color;
+        font-size: 18px;
+        font-weight: 400;
+        transition: .3s;
+    }
+}
+.app-item ul li:hover .app-text span{color:$red;}
+.appointment-img{
+    & img{
+        width: 100%;
+    }
+}
+.appointment-02-img {
+	position: absolute;
+	bottom: 77px;
+    left: -66px;
+    @media #{$md}{
+      left: -25px;
+    }
+    @media #{$xs}{
+      left: 0;
+      width: 100%;
+    }
+}
+// style-2
+.appointment-02-wrapper{
+    padding: 75px 60px 80px;
+    @media #{$lg}{
+      padding: 75px 20px 80px;
+    }
+    @media #{$xs}{
+      padding: 75px 15px 80px;
+    }
+}
+.sycho-tab-content.app-single{
+    @media #{$md}{
+      padding-right: 0;
+     padding-left: 0;
+     margin-top: 30px;
+     padding-bottom: 100px;
+    }
+    @media #{$xs}{
+      padding-right: 0;
+     padding-left: 0;
+     margin-top: 30px;
+     padding-bottom: 100px;
+    }
+}
+.app-title{
+    & h2{
+        color: $white;
+        font-size: 30px;
+        position: relative;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 350px;
+            height: 2px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 0;
+            background: #ac6052;
+            @media #{$xs}{
+                 width: 200px;
+            }
+        }
+    }
+}
+.apps-item{
+    & li{
+        padding-bottom: 20px;
+        &:last-child{padding-bottom: 0;}
+    }
+    & .app-text{
+        & h4{
+            margin-bottom: 0;
+            font-size: 18px;
+            color: $white;
+            & i{
+                margin-right: 25px;
+                height: 50px;
+                width: 50px;
+                background: $white;
+                line-height: 50px;
+                color: $theme-color;
+                display: inline-block;
+                text-align: center;
+                font-size: 30px;
+                border-radius: 50%;
+                font-weight: 300;
+            }
+        }
+        & span{
+            color: $white;
+            font-size: 18px;
+            font-weight: 600;
+            transition: .3s;
+        }
+    }
+}
+.app-button{
+    margin-top: 40px;
+    & a.c-btn{
+        background: #6d3024;
+        transition: .3s;
+        &:hover{
+            background: $theme-color;
+        }
+    }
+}
+
+// appointment
+.app-wrapper {
+    & .section-title h2 {
+        font-size: 48px;
+        line-height: 1.3;
+        @media #{$xs}{
+            font-size: 32px;
+        }
+    }
+}
+.app-icon {
+    & i {
+        background: #ffece8;
+        height: 70px;
+        width: 70px;
+        display: inline-block;
+        text-align: center;
+        font-size: 35px;
+        border-radius: 60px;
+        line-height: 64px;
+    }
+}
+.app-list {
+    & li {
+        overflow: hidden;
+        margin-bottom: 25px;
+    }
+}
+.app-icon {
+	padding-right: 20px;
+}
+.app-txt {
+    & h4 {
+        font-size: 18px;
+    }
+}

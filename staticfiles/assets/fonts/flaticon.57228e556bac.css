@@ -1,0 +1,55 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 30/08/2020 07:53
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.8b8b2d735bdb.eot");
+  src: url("./Flaticon.8b8b2d735bdb.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.50679437f849.woff2") format("woff2"),
+       url("./Flaticon.d4482bd5ca10.woff") format("woff"),
+       url("./Flaticon.f3e9f959029d.ttf") format("truetype"),
+       url("./Flaticon.4d17a7df5889.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.4d17a7df5889.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-girl:before { content: "\f100"; }
+.flaticon-brain:before { content: "\f101"; }
+.flaticon-brain-1:before { content: "\f102"; }
+.flaticon-brain-2:before { content: "\f103"; }
+.flaticon-knowledge:before { content: "\f104"; }
+.flaticon-certificate:before { content: "\f105"; }
+.flaticon-brain-3:before { content: "\f106"; }
+.flaticon-life:before { content: "\f107"; }
+.flaticon-depression:before { content: "\f108"; }
+.flaticon-millionaire:before { content: "\f109"; }
+.flaticon-brain-4:before { content: "\f10a"; }
+.flaticon-technical-support:before { content: "\f10b"; }
+.flaticon-email:before { content: "\f10c"; }
+.flaticon-wellness:before { content: "\f10d"; }
+.flaticon-psychology:before { content: "\f10e"; }
+.flaticon-anxiety:before { content: "\f10f"; }
+.flaticon-psychologist:before { content: "\f110"; }
+.flaticon-psychology-1:before { content: "\f111"; }
+.flaticon-psychology-2:before { content: "\f112"; }
+.flaticon-relationship:before { content: "\f113"; }
+.flaticon-brain-5:before { content: "\f114"; }
+.flaticon-brain-6:before { content: "\f115"; }
+.flaticon-mind:before { content: "\f116"; }
