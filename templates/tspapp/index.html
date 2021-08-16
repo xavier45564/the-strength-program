@@ -1,7 +1,11 @@
 {% extends 'tspapp/base.html' %} {% block content %} {% load static %}
 
 <!DOCTYPE html>
-<link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}"/>  
+<link
+  rel="shortcut icon"
+  type="image/x-icon"
+  href="{% static 'assets/img/favicon.ico' %}"
+/>
 <title>Home</title>
 <html class="no-js" lang="zxx">
   <body>
@@ -30,7 +34,7 @@
                     /></a>
                   </div>
                   <div class="header-button f-right d-none d-lg-block">
-                    <a href="contact" class="c-btn">Get Appointment</a>
+                    <a href="/contact" class="c-btn">Get Appointment</a>
                   </div>
                 </div>
                 <div class="main-menu">
@@ -39,10 +43,8 @@
                       <li>
                         <a href="/">home</a>
                       </li>
-                      <li><a href="about">About </a></li>
-                      <li><a href="services">Services </a></li>
-                      <li><a href="contact">Contact</a></li>
-                      <li><a href="team">team</a></li>
+                      <li><a href="/about">About</a></li>
+                      <li><a href="/services">Services</a></li>
                     </ul>
                   </nav>
                 </div>
@@ -94,26 +96,7 @@
             <p>example.mail@hum.com</p>
           </div>
         </div>
-        <div class="instagram">
-          <a href="#">
-            <img src="{% static 'assets/img/portfolio/p1.jpg' %}" alt="" />
-          </a>
-          <a href="#">
-            <img src="{% static 'assets/img/portfolio/p2.jpg' %}" alt="" />
-          </a>
-          <a href="#">
-            <img src="{% static 'assets/img/portfolio/p3.jpg' %}" alt="" />
-          </a>
-          <a href="#">
-            <img src="{% static 'assets/img/portfolio/p4.jpg' %}" alt="" />
-          </a>
-          <a href="#">
-            <img src="{% static 'assets/img/portfolio/p5.jpg' %}" alt="" />
-          </a>
-          <a href="#">
-            <img src="{% static 'assets/img/portfolio/p6.jpg' %}" alt="" />
-          </a>
-        </div>
+      
         <div class="social-icon-right mt-20">
           <a href="#">
             <i class="fab fa-facebook-f"></i>
@@ -159,9 +142,9 @@
                           independently as possible. Direct care workers (DCW)
                           work with clients to encourage the skills they need to
                           live, learn and work in social environments with
-                          minimal professional<br>support. Clients are provided
-                          with individual, family and group support to<br>encourage
-                          change in behavioral challenges.
+                          minimal professional<br />support. Clients are
+                          provided with individual, family and group support
+                          to<br />encourage change in behavioral challenges.
                         </p>
                       </div>
                       <div class="slider-btn">
@@ -258,8 +241,9 @@
                         <span>Unlimited Revisions</span>
                       </div>
                     </li>
-                    <a href="/contact" class="c-btn" style="width: 100%;">Contact Us Now!</a>
-
+                    <a href="/contact" class="c-btn" style="width: 100%"
+                      >Contact Us Now!</a
+                    >
                   </ul>
                 </div>
               </div>
@@ -428,7 +412,7 @@
       </div>
       <!-- awarad-area-end -->
 
-     <h1>&nbsp;</h1>
+      <h1>&nbsp;</h1>
 
       <!-- faq-area-start -->
       <div class="faq-area pt-100 pb-70">
