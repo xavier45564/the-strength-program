@@ -28,10 +28,42 @@ date = datetime.now().strftime('%Y/%m/%d %H:%M')
 
 
 def home(request):
-    return render(request, 'tspapp/index.html')
+    form = NewsletterForm()
+    if request.method == "POST":
+        form = NewsletterForm(request.POST)
+        if form.is_valid():
+            contact.instance.date = date
+            email = form.cleaned_data['email']
+            amount = Newsletter.objects.count() + 1
+            body = 'User with this email requested to join your news letter \n' + email + '\n' + 'Newspaper Participants: ' + str(amount)
+            email_alert('New Newsletter Request! \n', body, 'sabreexavier@gmail.com')
+            form.save()
+            return redirect('/')
+    currentYear = datetime.now().year
+    context = {
+        'form': form,
+        'year': currentYear,
+    } 
+    return render(request, 'tspapp/index.html', context)
 
 def about(request):
-    return render(request, 'tspapp/about.html')
+    form = NewsletterForm()
+    if request.method == "POST":
+        form = NewsletterForm(request.POST)
+        if form.is_valid():
+            form.instance.date = date
+            email = form.cleaned_data['email']
+            amount = Newsletter.objects.count() + 1
+            body = 'User with this email requested to join your news letter \n' + email + '\n' + 'Newspaper Participants: ' + str(amount)
+            email_alert('New Newsletter Request! \n', body, 'sabreexavier@gmail.com')
+            form.save()
+            return redirect('/')
+    currentYear = datetime.now().year
+    context = {
+        'form': form,
+        'year': currentYear,
+    } 
+    return render(request, 'tspapp/about.html', context)
 
 def appointment(request):
     return render(request, 'tspapp/appointment.html')
@@ -75,7 +107,23 @@ def contact(request):
     return render(request, 'tspapp/contact.html', context)
 
 def services(request):
-    return render(request, 'tspapp/services.html')
+    form = NewsletterForm()
+    if request.method == "POST":
+        form = NewsletterForm(request.POST)
+        if form.is_valid():
+            contact.instance.date = date
+            email = form.cleaned_data['email']
+            amount = Newsletter.objects.count() + 1
+            body = 'User with this email requested to join your news letter \n' + email + '\n' + 'Newspaper Participants: ' + str(amount)
+            email_alert('New Newsletter Request! \n', body, 'sabreexavier@gmail.com')
+            form.save()
+            return redirect('/')
+    currentYear = datetime.now().year
+    context = {
+        'form': form,
+        'year': currentYear,
+    } 
+    return render(request, 'tspapp/services.html', context)
 
 def teamDetails(request):
     return render(request, 'tspapp/team-details.html')

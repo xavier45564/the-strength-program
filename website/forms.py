@@ -25,5 +25,5 @@ class NewsletterForm(ModelForm):
         model = Newsletter
         fields = ['email']
         widgets = {
-            'email': forms.TextInput(attrs={'class': 'newsletter-form', 'name': 'email', 'placeholder': 'Email'}),
+            'email': forms.TextInput(attrs={'class': 'newsletter-form', 'name': 'email', 'placeholder': 'Enter Your Email : '}),
         }

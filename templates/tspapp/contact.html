@@ -30,7 +30,7 @@
                 <div class="menu-box">
                   <div class="header-03-right f-right">
                     <div class="menu-bar info-bar f-right d-none d-xl-block">
-                      <a href="#"
+                      <a href="/contact"
                         ><img
                           src="{% static 'assets/img/icon/bar.png' %}"
                           alt=""
@@ -249,7 +249,7 @@
                     </div>
                     <div class="col-lg-12">
                       <div class="contacts-us-form-button text-center">
-                        <input class="c-btn" type="submit" style="width: 100%; background-color: #A15547; color: white;">
+                        <button class="c-btn" type="submit" style="width: 100%;">Submit</button>
                       </div>
                     </div>
                   </div>
@@ -280,8 +280,8 @@
             <div class="col-xl-7 col-lg-7">
               <div class="cta-wrapper mt-25 mb-30">
                 <div class="cta-form">
-                  <form action="#">
-                    <input placeholder="Enter Your Email :" type="email" />
+                  <form method="POST"> {% csrf_token %}
+                    {{form.email}}
                     <button class="c-btn" type="submit">Get A Quote</button>
                   </form>
                 </div>
