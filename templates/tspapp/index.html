@@ -134,7 +134,7 @@
     </header>
     <!-- header-start -->
 
-    <main>
+    <main style="overflow-y: hidden;">
       <!-- hero-area start -->
       <section class="hero-area theme-red-soft">
         <div class="hero-slider">
@@ -148,9 +148,9 @@
                   <div class="col-xl-7 col-lg-7 col-md-9">
                     <div class="hero-content">
                       <div class="slider-caption">
-                        <span data-animation="fadeInUp" data-delay=".2s"
+                        <!-- <span data-animation="fadeInUp" data-delay=".2s"
                           >COVID-19 Mental Health Tip</span
-                        >
+                        > -->
                         <h2 data-animation="fadeInUp" data-delay=".4s">
                           Some Advice
                         </h2>
@@ -171,13 +171,13 @@
                           class="c-btn"
                           >Get Appointment</a
                         >
-                        <a
+                        <!-- <a
                           data-animation="fadeInUp"
                           data-delay=".8s"
                           href="services"
                           class="c-btn border-btn"
                           >Missions & Vision
-                        </a>
+                        </a> -->
                       </div>
                     </div>
                   </div>
@@ -195,17 +195,17 @@
         data-background="{% static 'assets/img/bg/01.jpg' %}"
       >
         <div class="container">
-          <div class="row">
-            <div class="col-xl-6 col-lg-5">
-              <div class="single-about mb-30">
+          <div class="row" style="width: 100%;">
+            <!-- <div class="col-xl-6 col-lg-5">
+             <divs class="single-about mb-30">
                 <div class="ab-img">
                   <img src="{% static 'assets/img/about/01.png' %}" alt="" />
                 </div>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-7">
-              <div class="about-wrapper mt-20 mb-15">
-                <div class="section-title mb-40">
+              </divs>
+            </div> -->
+            <!-- <div style="width: 25%;"></div> -->
+              <div class="about-wrapper mt-20 mb-15" >
+                <div class="section-title mb-40" style="width: 100%; text-align: center;">
                   <span><i class="far fa-plus"></i>Welcome note</span>
                   <h2>Who Are We?</h2>
                 </div>
@@ -271,7 +271,6 @@
                   </ul>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
@@ -338,19 +337,31 @@
                     <li>
                       <div class="app-text">
                         <h4>Monday</h4>
-                        <span>9:00 - 20:00</span>
+                        <span>9:00am - 5:00pm</span>
                       </div>
                     </li>
                     <li>
                       <div class="app-text">
-                        <h4>Saturday</h4>
-                        <span>9:00 - 20:00</span>
+                        <h4>Tuesday</h4>
+                        <span>9:00am - 5:00pm</span>
                       </div>
                     </li>
                     <li>
                       <div class="app-text">
-                        <h4>sunday</h4>
-                        <span>9:00 - 20:00</span>
+                        <h4>Wednesday</h4>
+                        <span>9:00am - 5:00pm</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="app-text">
+                        <h4>Thursday</h4>
+                        <span>9:00am - 5:00pm</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="app-text">
+                        <h4>Friday</h4>
+                        <span>9:00am - 5:00pm</span>
                       </div>
                     </li>
                   </ul>
@@ -361,7 +372,7 @@
               <div class="single-app pos-rel">
                 <div class="appointment-img">
                   <img
-                    src="{% static 'assets/img/appointment/02.jpg' %}"
+                    src="{% static 'assets/img/appointment/02.png' %}"
                     alt=""
                   />
                 </div>
@@ -379,7 +390,7 @@
       <!-- appointment-area-end -->
 
       <!-- awarad-area-start -->
-      <div class="award-area">
+      <!-- <div class="award-area">
         <div class="container">
           <div
             class="award-bg pt-100 pb-70"
@@ -434,10 +445,10 @@
           </div>
         </div>
       </div>
-      <!-- awarad-area-end -->
+      awarad-area-end -->
       <div style="padding-top: 100; padding-bottom: 100"></div>
       <!-- counter-area-start -->
-      <div class="counter-area">
+      <!-- <div class="counter-area">
         <div class="container-fluid">
           <div class="row">
             <div class="col-xl-6 col-lg-6 mb-30">
@@ -510,14 +521,14 @@
           </div>
         </div>
       </div>
-      <!-- counter-area-end -->
+      counter-area-end -->
 
-      <!-- cta-area-start -->
+      <!-- cta-area-start
       <div
         class="cta-area pt-100 ml-15 mr-15 pb-70"
         data-background="{% static 'assets/img/bg/03.jpg' %}"
       >
-        <div class="container">
+        <dive class="container">
           <div class="row">
             <div class="col-xl-45 col-lg-5">
               <div class="single-cta">
@@ -538,10 +549,10 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </dive>
+      </div> -->
       <!-- cta-area-end -->
-      <div style="height: 100;"></div>
+      <div style="margin-top: -150;"></div>
        <!-- about-area-start -->
        <div class="abou-02-area pos-rel pt-120 pb-70 grey-soft-bg">
         <div class="about-bg-img">
@@ -553,7 +564,7 @@
               <div class="abouts-wrapper">
                 <div class="section-title mb-15">
                   <span><i class="far fa-plus"></i>COVID 19</span>
-                  <h2>Understanding The Problem</h2>
+                  <!-- <h2>Understanding The Problem</h2> -->
                 </div>
                 <div class="about-info">
                   <p>
