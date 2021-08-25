@@ -71,21 +71,21 @@ def appointment(request):
 def contact(request):
     form = NewsletterForm()
     contact = ContactForm()
+    contactID = Contact.objects.count()
 
     if request.method == 'POST':
-        contact = ContactForm(request.POST)
+        contact = ContactForm(request.POST, request.FILES)
         if contact.is_valid():
             contact.instance.date = date
             name = contact.cleaned_data['name']
             email = contact.cleaned_data['email']
-            dxCode = contact.cleaned_data['dxCode']
             phone = contact.cleaned_data['phone']
-            agency = contact.cleaned_data['agency']
+            resume = contact.cleaned_data['resume']
             message = contact.cleaned_data['message']
-            body = 'Name: ' + name + '\n' + 'Email: ' + email + '\n' + 'DX Code' + dxCode + '\n' + 'Address Phone' + str(phone) + '\n' + 'Message: \n' + message
-            email_alert(agency, body, 'sabreexavier@gmail.com')
             contact.save()
-            return redirect('/contact')
+            body = 'New Upload Resume Upload Type This' + 'http://127.0.0.1:8000/admin/website/contact/' + str(contactID) +'/change/'
+            email_alert('Resume', body, 'sabreexavier@gmail.com')
+            return redirect('/resume')
         
     if request.method == "POST":
         form = NewsletterForm(request.POST)

@@ -6,17 +6,15 @@ from django.forms import ModelForm
 
 class ContactForm(ModelForm):
     message = forms.CharField(widget=forms.Textarea(attrs={'placeholder':'Comments...', 'class':'contacts-icon contactss-message'}), )
+    resume = forms.FileInput(attrs={'class':'indeppn'})
     class Meta:
         model = Contact
-        fields = ['name', 'email', 'message', 'dxCode', 'phone', 'agency']
+        fields = ['name', 'email', 'message', 'phone', 'resume']
         message = forms.CharField(widget=forms.TextInput(attrs={'size': '40'}))
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-group', 'name': 'name', 'placeholder': 'Your Name...'}),
-            'agency': forms.TextInput(attrs={'class': 'form-group', 'name': 'agency', 'placeholder': 'Referring Agency'}),
             'email': forms.TextInput(attrs={'class': 'form-group', 'name': 'email', 'placeholder': 'Your Email...', 'rows': '5'}),
-            'dxCode': forms.TextInput(attrs={'class': 'form-group', 'name': 'dxCode', 'placeholder': 'Therapist Dx Code...', 'rows': '5'}),
             'phone': forms.NumberInput(attrs={'class': 'form-group', 'name': 'phone', 'placeholder': 'Address Phone...', 'rows': '5'}),
-            
         }
 
 

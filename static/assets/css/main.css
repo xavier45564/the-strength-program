@@ -7441,7 +7441,7 @@ ul.cat li a:hover {
 
 .contacts-us-form input {
   border: 3px solid transparent;
-  background: #ffffff;
+  /* background: white; */
   height: 80px;
   margin-bottom: 30px;
   padding: 0 28px;
@@ -7452,7 +7452,7 @@ ul.cat li a:hover {
 }
 .contacts-us-form textarea {
   border: 3px solid transparent;
-  background: #ffffff;
+  /* background: white; */
   height: 200px;
   margin-bottom: 30px;
   padding: 28px;
@@ -8177,7 +8177,7 @@ ul.cat li a:hover {
 }
 .team-form .contacts-us-form input {
   border: 0;
-  background: #fff;
+  background: transparent;
   height: 60px;
   margin-bottom: 15px;
 }

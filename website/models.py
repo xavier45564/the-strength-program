@@ -1,4 +1,5 @@
 from django.db import models
+from django.forms.widgets import Media
 
 
 
@@ -6,10 +7,9 @@ from django.db import models
 class Contact(models.Model):
     name = models.CharField(max_length=200)
     email = models.CharField(max_length=200, blank=True)
-    dxCode = models.CharField(max_length=200, blank=True)
     phone = models.IntegerField(blank=True, default=None)
     subject = models.CharField(max_length=200)
-    agency = models.CharField(max_length=200)
+    resume = models.FileField(default=None, upload_to='documents/')
     message = models.CharField(max_length=500)
     date = models.CharField(max_length=100)
 
