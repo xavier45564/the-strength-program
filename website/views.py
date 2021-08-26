@@ -73,17 +73,13 @@ def contact(request):
     contact = ContactForm()
     contactID = Contact.objects.count()
 
-    if request.method == 'POST':
+    if request.method == 'POST' and 'btnform1' in request.POST:
         contact = ContactForm(request.POST, request.FILES)
         if contact.is_valid():
             contact.instance.date = date
-            name = contact.cleaned_data['name']
             email = contact.cleaned_data['email']
-            phone = contact.cleaned_data['phone']
-            resume = contact.cleaned_data['resume']
-            message = contact.cleaned_data['message']
             contact.save()
-            body = 'New Upload Resume Upload Type This' + 'http://127.0.0.1:8000/admin/website/contact/' + str(contactID) +'/change/'
+            body = 'New Resume Upload Follow This Link' + '\n' + 'http://127.0.0.1:8000/admin/website/contact/' + str(11 + contactID) +'/change/'
             email_alert('Resume', body, 'sabreexavier@gmail.com')
             return redirect('/resume')
         

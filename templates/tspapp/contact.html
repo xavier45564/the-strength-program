@@ -201,6 +201,7 @@
                   id="contacts-us-form"
                   class="contacts-us-formj"
                   method="POST"
+                  name="CONTACT"
                   enctype="multipart/form-data"
                 >
                   {% csrf_token %}
@@ -255,7 +256,7 @@
                     </div>
                     <div class="col-lg-12">
                       <div class="contacts-us-form-button text-center">
-                        <button class="c-btn" type="submit" style="width: 100%">
+                        <button name="btnform1" class="c-btn" type="submit" style="width: 100%">
                           Submit
                         </button>
                       </div>
