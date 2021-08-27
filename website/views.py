@@ -36,7 +36,7 @@ def home(request):
             email = form.cleaned_data['email']
             amount = Newsletter.objects.count() + 1
             body = 'User with this email requested to join your news letter \n' + email + '\n' + 'Newspaper Participants: ' + str(amount)
-            email_alert('New Newsletter Request! \n', body, 'sabreexavier@gmail.com')
+            email_alert('New Newsletter Request! \n', body, 'info@thestrengthprogram.org')
             form.save()
             return redirect('/')
     currentYear = datetime.now().year
@@ -55,7 +55,7 @@ def about(request):
             email = form.cleaned_data['email']
             amount = Newsletter.objects.count() + 1
             body = 'User with this email requested to join your news letter \n' + email + '\n' + 'Newspaper Participants: ' + str(amount)
-            email_alert('New Newsletter Request! \n', body, 'sabreexavier@gmail.com')
+            email_alert('New Newsletter Request! \n', body, 'info@thestrengthprogram.org')
             form.save()
             return redirect('/')
     currentYear = datetime.now().year
@@ -80,7 +80,7 @@ def contact(request):
             email = contact.cleaned_data['email']
             contact.save()
             body = 'New Resume Upload Follow This Link' + '\n' + 'http://127.0.0.1:8000/admin/website/contact/' + str(11 + contactID) +'/change/'
-            email_alert('Resume', body, 'sabreexavier@gmail.com')
+            email_alert('Resume', body, 'info@thestrengthprogram.org')
             return redirect('/resume')
         
     if request.method == "POST":
@@ -90,7 +90,7 @@ def contact(request):
             email = form.cleaned_data['email']
             amount = Newsletter.objects.count() + 1
             body = 'User with this email requested to join your news letter \n' + email + '\n' + 'Newspaper Participants: ' + str(amount)
-            email_alert('New Newsletter Request! \n', body, 'sabreexavier@gmail.com')
+            email_alert('New Newsletter Request! \n', body, 'info@thestrengthprogram.org')
             form.save()
             return redirect('/')
     currentYear = datetime.now().year
@@ -111,7 +111,7 @@ def services(request):
             email = form.cleaned_data['email']
             amount = Newsletter.objects.count() + 1
             body = 'User with this email requested to join your news letter \n' + email + '\n' + 'Newspaper Participants: ' + str(amount)
-            email_alert('New Newsletter Request! \n', body, 'sabreexavier@gmail.com')
+            email_alert('New Newsletter Request! \n', body, 'info@thestrengthprogram.org')
             form.save()
             return redirect('/')
     currentYear = datetime.now().year
