@@ -71,7 +71,7 @@ def appointment(request):
 def contact(request):
     form = NewsletterForm()
     contact = ContactForm()
-    contactID = Contact.objects.count()
+    contactID = Resume.objects.count()
 
     if request.method == 'POST' and 'btnform1' in request.POST:
         contact = ContactForm(request.POST, request.FILES)
