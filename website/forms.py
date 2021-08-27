@@ -8,7 +8,7 @@ class ContactForm(ModelForm):
     message = forms.CharField(widget=forms.Textarea(attrs={'placeholder':'Comments...', 'class':'contacts-icon contactss-message'}), )
     resume = forms.FileInput(attrs={'class':'indeppn'})
     class Meta:
-        model = Resume
+        model = Resumes
         fields = ['name', 'email', 'message', 'phone', 'resume']
         message = forms.CharField(widget=forms.TextInput(attrs={'size': '40'}))
         widgets = {
