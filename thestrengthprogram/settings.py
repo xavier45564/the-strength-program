@@ -11,7 +11,7 @@ SECRET_KEY = 'django-insecure-+kp@v!jqvd#q8z4gdcnqq=o*h0%#mo@_$ywvpu_!e3fv!m835w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['the-strength-program.herokuapp.com', '127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin.apps.SimpleAdminConfig',
