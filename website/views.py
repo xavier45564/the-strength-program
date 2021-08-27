@@ -79,7 +79,7 @@ def contact(request):
             contact.instance.date = date
             email = contact.cleaned_data['email']
             contact.save()
-            body = 'New Resume Upload Follow This Link' + '\n' + 'http://127.0.0.1:8000/admin/website/contact/' + str(11 + contactID) +'/change/'
+            body = 'New Resume Upload Follow This Link' + '\n' + 'http://127.0.0.1:8000/admin/website/contact/' + str(contactID) +'/change/'
             email_alert('Resume', body, 'info@thestrengthprogram.org')
             return redirect('/resume')
         
