@@ -14,7 +14,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['the-strength-program.herokuapp.com', '127.0.0.1']
 
 INSTALLED_APPS = [
-    'django.contrib.admin.apps.SimpleAdminConfig',
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
