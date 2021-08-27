@@ -71,7 +71,6 @@ def appointment(request):
 def contact(request):
     form = NewsletterForm()
     contact = ContactForm()
-    contactID = Resume.objects.count()
 
     if request.method == 'POST' and 'btnform1' in request.POST:
         contact = ContactForm(request.POST, request.FILES)
@@ -79,7 +78,7 @@ def contact(request):
             contact.instance.date = date
             email = contact.cleaned_data['email']
             contact.save()
-            body = 'New Resume Upload Follow This Link' + '\n' + 'http://127.0.0.1:8000/admin/website/contact/' + str(contactID) +'/change/'
+            body = 'New Resume Upload'
             email_alert('Resume', body, 'info@thestrengthprogram.org')
             return redirect('/resume')
         
