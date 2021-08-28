@@ -1,0 +1,51 @@
+;;
+;; Domain:     moneytreedev.com.
+;; Exported:   2021-08-26 18:53:35
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+moneytreedev.com	3600	IN	SOA	moneytreedev.com root.moneytreedev.com 2038167061 7200 3600 86400 3600
+
+;; A Records
+moneytreedev.com.	1	IN	A	3.214.173.11
+
+;; CNAME Records
+_284e1af0a4f79d6e3ba7153b7f91569c.moneytreedev.com.	1	IN	CNAME	5bc6e57593117b0c7a3a6be0a7136937.fff9e5921d508cc9af7901ee89a8ae78.b1b5ffc9abe9b0b.comodoca.com.
+autodiscover.moneytreedev.com.	1	IN	CNAME	autodiscover.outlook.com.
+_domainconnect.moneytreedev.com.	1	IN	CNAME	_domainconnect.gd.domaincontrol.com.
+email.moneytreedev.com.	1	IN	CNAME	email.secureserver.net.
+lyncdiscover.moneytreedev.com.	1	IN	CNAME	webdir.online.lync.com.
+msoid.moneytreedev.com.	1	IN	CNAME	clientconfig.microsoftonline-p.net.
+sip.moneytreedev.com.	1	IN	CNAME	sipdir.online.lync.com.
+www.moneytreedev.com.	1	IN	CNAME	moneytreedev.herokuapp.com.
+
+;; MX Records
+moneytreedev.com.	1	IN	MX	0 moneytreedev-com.mail.protection.outlook.com.
+
+;; SRV Records
+_sipfederationtls._tcp.moneytreedev.com.	1	IN	SRV	100 1 5061 sipfed.online.lync.com.
+_sip._tls.moneytreedev.com.	1	IN	SRV	100 1 443 sipdir.online.lync.com.
+
+;; TXT Records
+moneytreedev.com.	1	IN	TXT	"v=spf1 include:secureserver.net -all"
+moneytreedev.com.	1	IN	TXT	"NETORGFT8066177.onmicrosoft.com"
