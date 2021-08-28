@@ -4,7 +4,7 @@ from django.conf.urls import handler404, url
 from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf import settings
-from website.views import *
+from main.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
